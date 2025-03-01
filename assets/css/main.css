@@ -944,7 +944,7 @@ section,
   /* --default-color: #ffffff; */
 
   background-color: #111;
-  background-image: linear-gradient(rgba(28, 28, 28, 0.3), rgba(16, 16, 16, 0.3)), url(/assets/img/section-bg.jpg);
+  background-image: linear-gradient(rgba(28, 28, 28, 0.3), rgba(16, 16, 16, 0.3)), url(assets/img/section-bg.jpg);
 }
 
 .speakers .member {
