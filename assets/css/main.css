@@ -1,15 +1,4 @@
-/**
-* Template Name: TheEvent
-* Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -165,59 +154,15 @@ h6 {
     opacity: 0;
   }
 }
-
-/* PHP Email Form Messages
-------------------------------*/
-.php-email-form .error-message {
-  display: none;
-  background: #df1529;
-  color: #ffffff;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
+/*--------------------------------------------------------------
+# SEPARATOR
+--------------------------------------------------------------*/
+.separator{
+  margin-top: 5%;
+  margin-bottom: -5%;
+  height: 1px;
+  width: 100%;
 }
-
-.php-email-form .sent-message {
-  display: none;
-  color: #ffffff;
-  background: #059652;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .loading {
-  display: none;
-  background: var(--surface-color);
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-}
-
-.php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
-  border-top-color: var(--surface-color);
-  animation: php-email-form-loading 1s linear infinite;
-}
-
-@keyframes php-email-form-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
@@ -799,6 +744,7 @@ section,
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
+  color: var(--background-color);
 }
 
 .section-title h2:after {
@@ -995,7 +941,10 @@ section,
 # Speakers Section
 --------------------------------------------------------------*/
 .speakers {
-  --default-color: #ffffff;
+  /* --default-color: #ffffff; */
+
+  background-color: #111;
+  background-image: linear-gradient(rgba(28, 28, 28, 0.3), rgba(16, 16, 16, 0.3)), url(/assets/img/section-bg.jpg);
 }
 
 .speakers .member {
@@ -1031,6 +980,7 @@ section,
   font-style: italic;
   display: block;
   font-size: 13px;
+  color: var(--background-color);
 }
 
 .speakers .member .social {
@@ -1040,13 +990,13 @@ section,
 
 .speakers .member .social a {
   transition: color 0.3s;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: color-mix(in srgb, var(--background-color), transparent 30%);
   margin: 0 4px;
   display: inline-block;
 }
 
 .speakers .member .social a:hover {
-  color: var(--default-color);
+  color: var(--accent-color);
 }
 
 .speakers .member .social i {
@@ -1063,6 +1013,8 @@ section,
 --------------------------------------------------------------*/
 .schedule {
   background-color: #111;
+  background-image: linear-gradient(rgba(28, 28, 28, 0.3), rgba(16, 16, 16, 0.3)), url(/assets/img/section-bg.jpg);
+
 }
 
 .schedule .nav-tabs {
@@ -1180,6 +1132,10 @@ section,
 /*--------------------------------------------------------------
 # Venue Section
 --------------------------------------------------------------*/
+.venue{
+  background-color: #111;
+  background-image: linear-gradient(rgba(28, 28, 28, 0.3), rgba(16, 16, 16, 0.3)), url(/assets/img/section-bg.jpg);
+}
 .venue .container-fluid {
   margin-bottom: 3px;
 }
@@ -1222,8 +1178,8 @@ section,
 
 .venue .venue-gallery {
   overflow: hidden;
-  border-right: 3px solid var(--background-color);
-  border-bottom: 3px solid var(--background-color);
+  border: 3px solid var(--background-color);
+  /* border-bottom: 3px solid var(--background-color); */
 }
 
 .venue .venue-gallery img {
@@ -1234,56 +1190,14 @@ section,
   transform: scale(1.1);
 }
 
-/*--------------------------------------------------------------
-# Gallery Section
---------------------------------------------------------------*/
-.gallery {
-  overflow: hidden;
-}
-
-.gallery .swiper-wrapper {
-  height: auto;
-}
-
-.gallery .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.gallery .swiper-pagination .swiper-pagination-bullet {
-  background-color: var(--background-color);
-  border: 1px solid var(--accent-color);
-  width: 12px;
-  height: 12px;
-  opacity: 1;
-}
-
-.gallery .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--accent-color);
-}
-
-.gallery .swiper-slide-active {
-  text-align: center;
-}
-
-@media (min-width: 992px) {
-  .gallery .swiper-wrapper {
-    padding: 40px 0;
-  }
-
-  .gallery .swiper-slide-active {
-    background: var(--background-color);
-    border: 6px solid var(--accent-color);
-    padding: 4px;
-    z-index: 1;
-    transform: scale(1.2);
-    transition: none;
-  }
-}
 
 /*--------------------------------------------------------------
 # Sponsors Section
 --------------------------------------------------------------*/
+.sponsors{
+  background-color: #111;
+  background-image: linear-gradient(rgba(28, 28, 28, 0.3), rgba(16, 16, 16, 0.3)), url(/assets/img/section-bg.jpg);
+}
 .sponsors .clients-wrap {
   border: 0.1px solid #fff;
 }
@@ -1323,14 +1237,19 @@ section,
 /*--------------------------------------------------------------
 # Faq Section
 --------------------------------------------------------------*/
+.faq{
+  background-color: #111;
+  background-image: linear-gradient(rgba(28, 28, 28, 0.3), rgba(16, 16, 16, 0.3)), url(/assets/img/section-bg.jpg);
+}
 .faq .faq-container .faq-item {
-  background-color: var(--surface-color);
   position: relative;
   padding: 20px;
   margin-bottom: 15px;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
   border-radius: 5px;
   overflow: hidden;
+  background-color: var(--default-color);
+  color: var(--background-color);
 }
 
 .faq .faq-container .faq-item:last-child {
@@ -1346,6 +1265,7 @@ section,
   cursor: pointer;
   display: flex;
   align-items: center;
+  color: #fff;
 }
 
 .faq .faq-container .faq-item h3 .num {
@@ -1408,6 +1328,10 @@ section,
 /*--------------------------------------------------------------
 # Buy Tickets Section
 --------------------------------------------------------------*/
+.buy-tickets{
+  background-color: #111;
+  background-image: linear-gradient(rgba(28, 28, 28, 0.3), rgba(16, 16, 16, 0.3)), url(/assets/img/section-bg.jpg);
+}
 .buy-tickets .pricing-item {
   background-color: var(--surface-color);
   box-shadow: 0 3px 20px -2px rgba(0, 0, 0, 0.1);
@@ -1517,8 +1441,14 @@ section,
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
+.contact{
+  margin-top: -3%;
+  background-color: #111;
+  background-image: linear-gradient(rgba(28, 28, 28, 0.3), rgba(16, 16, 16, 0.3)), url(/assets/img/section-bg.jpg);
+  color: #fff;
+}
 .contact .info-item {
-  background-color: var(--surface-color);
+  background-color: var(--default-color);
   padding: 20px 0 30px 0;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
@@ -1543,6 +1473,7 @@ section,
   font-size: 18px;
   font-weight: 700;
   margin: 10px 0;
+  color: var(--background-color);
 }
 
 .contact .info-item p {
@@ -1552,7 +1483,7 @@ section,
 }
 
 .contact .php-email-form {
-  background-color: var(--surface-color);
+  background-color: var(--default-color);
   height: 100%;
   padding: 30px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
@@ -1571,11 +1502,15 @@ section,
   padding: 10px 15px;
   box-shadow: none;
   border-radius: 0;
-  color: var(--default-color);
-  background-color: var(--surface-color);
+  color: var(--surface-color);
+  background-color: var(--default-color);
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
-
+.contact .php-email-form input[type=text],
+.contact .php-email-form input[type=email],
+.contact .php-email-form textarea{
+  border-color: var(--surface-color);
+}
 .contact .php-email-form input[type=text]:focus,
 .contact .php-email-form input[type=email]:focus,
 .contact .php-email-form textarea:focus {
@@ -1585,7 +1520,7 @@ section,
 .contact .php-email-form input[type=text]::placeholder,
 .contact .php-email-form input[type=email]::placeholder,
 .contact .php-email-form textarea::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
+  color: color-mix(in srgb, var(--surface-color), transparent 70%);
 }
 
 .contact .php-email-form button[type=submit] {
