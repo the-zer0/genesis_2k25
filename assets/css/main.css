@@ -1099,9 +1099,9 @@ section,
 }
 
 .sponsors .client-logo img {
-  padding: 10px;
-  height: 500px; 
-  width: 500px; 
+  padding: 25px;
+  height: 350px; 
+  width: 350px; 
   transition: 0.3s;
 }
 
