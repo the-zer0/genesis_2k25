@@ -910,7 +910,7 @@ section,
 
 .about .about-info:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 50%);
+  background: transparent;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -1008,127 +1008,6 @@ section,
 
 .speakers .member:hover .member-info {
   bottom: 0;
-}
-
-/*--------------------------------------------------------------
-# Schedule Section
---------------------------------------------------------------*/
-.schedule {
-  background-color: #111;
-  background-image: linear-gradient(rgba(28, 28, 28, 0.3), rgba(16, 16, 16, 0.3)), url(/genesis_2k25/assets/img/section-bg.jpg);
-
-}
-
-.schedule .nav-tabs {
-  text-align: center;
-  margin: auto;
-  display: block;
-  border-bottom: 0;
-  margin-bottom: 30px;
-}
-
-.schedule .nav-tabs li {
-  display: inline-block;
-  margin-bottom: 0;
-}
-
-.schedule .nav-tabs a {
-  border: none;
-  border-radius: 50px;
-  font-weight: 600;
-  background-color: var(--accent-color);
-  color: var(--surface-color);
-  padding: 10px 100px;
-}
-
-@media (max-width: 991px) {
-  .schedule .nav-tabs a {
-    padding: 8px 60px;
-  }
-}
-
-@media (max-width: 767px) {
-  .schedule .nav-tabs a {
-    padding: 8px 50px;
-  }
-}
-
-@media (max-width: 480px) {
-  .schedule .nav-tabs a {
-    padding: 8px 30px;
-  }
-}
-
-.schedule .nav-tabs a.active {
-  background-color: #4c4c4c;
-  color: var(--contrast-color);
-}
-
-.schedule .sub-heading {
-  text-align: center;
-  font-size: 18px;
-  font-style: italic;
-  margin: 0 auto 30px auto;
-  color: var(--background-color);
-}
-
-@media (min-width: 991px) {
-  .schedule .sub-heading {
-    width: 75%;
-  }
-}
-
-.schedule .tab-pane {
-  transition: ease-in-out 0.2s;
-}
-
-.schedule .schedule-item {
-  border-bottom: 0.1px solid #fff;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  transition: background-color ease-in-out 0.3s;
-}
-
-.schedule .schedule-item time {
-  padding-bottom: 5px;
-  display: inline-block;
-  color: var(--accent-color);
-}
-
-.schedule .schedule-item .speaker {
-  width: 60px;
-  height: 60px;
-  overflow: hidden;
-  border-radius: 50%;
-  float: left;
-  margin: 0 10px 10px 0;
-}
-
-.schedule .schedule-item .speaker img {
-  height: 100%;
-  transform: translateX(-50%);
-  margin-left: 50%;
-  transition: all ease-in-out 0.3s;
-}
-
-.schedule .schedule-item h4 {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  color: var(--background-color);
-}
-
-.schedule .schedule-item h4 span {
-  font-style: italic;
-  color: var(--accent-color);
-  font-weight: normal;
-  font-size: 16px;
-}
-
-.schedule .schedule-item p {
-  font-style: italic;
-  color: var(--background-color);
-  margin-bottom: 0;
 }
 
 /*--------------------------------------------------------------
